@@ -18,7 +18,7 @@ def fetch_playlist_items_page(google_api_key, youtube_playlist_id, page_token=No
             "key": google_api_key,
             "playlistId": youtube_playlist_id,
             "part": "contentDetails",
-            "pageToken": page_token,  # <-- Fix: API expects "pageToken", not "page_token"
+            "pageToken": page_token,  
         },
     )
     payload = response.json()
